@@ -2,7 +2,7 @@
 Desarrollo para internet I
 
 # PW
-Programación para Windows
+Desarrollo para internet
 
 Este sitio web es parte del material de apoyo para la materia *Programación para Windows*. Está alojado en GitHub Pages y contiene recursos interactivos, presentaciones y enlaces a herramientas útiles.
 
