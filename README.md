@@ -10,7 +10,7 @@ Este sitio web es parte del material de apoyo para la materia *Programación par
 Actividades de desarrollo para internet 1
 
 ## Cómo ver el sitio
-Visita la página del proyecto aquí: [Desarrollo para internet](https://islas06.github.io/Dev_internet_1/)
+Visita la página del proyecto aquí: [Desarrollo para internet I](https://islas06.github.io/Dev_internet_1/)
 
 ## Tecnologías utilizadas
 - *HTML5* para la estructura del sitio.
