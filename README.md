@@ -1,9 +1,7 @@
 # Dev_internet_1
 Desarrollo para internet I
 
-Desarrollo para internet I
-
-Este sitio web es parte del material de apoyo para la materia *Desarrollo para internet*. Está alojado en GitHub Pages y contiene recursos interactivos, presentaciones y enlaces a herramientas útiles.
+Este sitio web es parte del material de apoyo para la materia **Desarrollo para internet**. Está alojado en GitHub Pages y contiene recursos interactivos, presentaciones y enlaces a herramientas útiles.
 
 ## Contenido
 Actividades de desarrollo para internet 1
