@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Checkbox</title>
+    <script>
+        function validarCheckbox() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var seleccionado = false;
+
+            checkboxes.forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    seleccionado = true;
+                }
+            });
+
+            if (seleccionado) {
+                alert("Al menos un checkbox está seleccionado.");
+            } else {
+                alert("Debes seleccionar al menos un checkbox.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Validar Checkbox</h1>
+    <input type="checkbox" id="opcion1" name="opcion1" value="1">
+    <label for="opcion1">Opción 1</label><br>
+    <input type="checkbox" id="opcion2" name="opcion2" value="2">
+    <label for="opcion2">Opción 2</label><br>
+    <input type="checkbox" id="opcion3" name="opcion3" value="3">
+    <label for="opcion3">Opción 3</label><br><br>
+    <button onclick="validarCheckbox()">Validar</button>
+</body>
+</html>

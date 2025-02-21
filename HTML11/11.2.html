@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Cambio de Tamaño</title>
+    <style>
+        #objeto {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 50px;
+        }
+    </style>
+    <script>
+        function cambiarTamaño(aumentar) {
+            var objeto = document.getElementById("objeto");
+            var ancho = parseInt(objeto.style.width) || 100;
+            var alto = parseInt(objeto.style.height) || 100;
+
+            if (aumentar) {
+                ancho += 10;
+                alto += 10;
+            } else {
+                ancho -= 10;
+                alto -= 10;
+            }
+
+            objeto.style.width = ancho + "px";
+            objeto.style.height = alto + "px";
+        }
+    </script>
+</head>
+<body>
+    <h1>Animación de Cambio de Tamaño</h1>
+    <div id="objeto"></div>
+    <br><br>
+    <button onclick="cambiarTamaño(true)">Aumentar</button>
+    <button onclick="cambiarTamaño(false)">Disminuir</button>
+</body>
+</html>

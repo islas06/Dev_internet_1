@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contar Palabra en Frase</title>
+    <script>
+        function contarPalabra() {
+            var frase = "Este es un ejemplo de texto con ejemplo de palabra repetida";
+            var palabra = "ejemplo";
+            var regex = new RegExp(palabra, "g"); // Expresión regular global
+            var coincidencias = frase.match(regex);
+
+            if (coincidencias) {
+                alert("La palabra '" + palabra + "' aparece " + coincidencias.length + " veces.");
+            } else {
+                alert("La palabra '" + palabra + "' no aparece en la frase.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Contar Palabra en Frase</h1>
+    <button onclick="contarPalabra()">Contar</button>
+</body>
+</html>

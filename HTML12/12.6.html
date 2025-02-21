@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Atributo</title>
+    <script>
+        function cambiarAtributo() {
+            // Seleccionar el elemento
+            var imagen = document.getElementById("imagen");
+
+            // Cambiar el atributo src
+            imagen.setAttribute("src", "https://via.placeholder.com/200x100");
+        }
+    </script>
+</head>
+<body>
+    <h1>Cambiar Atributo</h1>
+    <img id="imagen" src="https://via.placeholder.com/150" alt="Imagen de ejemplo">
+    <br><br>
+    <button onclick="cambiarAtributo()">Cambiar Imagen</button>
+</body>
+</html>

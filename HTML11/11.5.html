@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Desvanecimiento</title>
+    <style>
+        #objeto {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin: 50px;
+            opacity: 1;
+        }
+    </style>
+    <script>
+        function desvanecer() {
+            var objeto = document.getElementById("objeto");
+            var opacidad = parseFloat(objeto.style.opacity) || 1;
+
+            if (opacidad > 0) {
+                opacidad -= 0.1;
+                objeto.style.opacity = opacidad;
+                setTimeout(desvanecer, 100); // Llamada recursiva para animación gradual
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Animación de Desvanecimiento</h1>
+    <div id="objeto"></div>
+    <br><br>
+    <button onclick="desvanecer()">Desvanecer</button>
+</body>
+</html>

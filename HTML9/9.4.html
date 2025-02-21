@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reemplazar Palabra</title>
+    <script>
+        function reemplazarPalabra() {
+            var frase = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
+            var nuevaFrase = frase.replace(/ipsum/g, "dolor"); // Reemplazar "ipsum" por "dolor"
+
+            alert("Frase original: " + frase + "\nFrase modificada: " + nuevaFrase);
+        }
+    </script>
+</head>
+<body>
+    <h1>Reemplazar Palabra</h1>
+    <button onclick="reemplazarPalabra()">Reemplazar</button>
+</body>
+</html>

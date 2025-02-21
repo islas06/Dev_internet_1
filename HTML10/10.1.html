@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Campo Vacío</title>
+    <script>
+        function validarCampo() {
+            var campo = document.getElementById("campo").value;
+
+            if (campo.trim() === "") {
+                alert("El campo no puede estar vacío.");
+            } else {
+                alert("El campo es válido.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Validar Campo Vacío</h1>
+    <input type="text" id="campo" placeholder="Ingrese un valor">
+    <button onclick="validarCampo()">Validar</button>
+</body>
+</html>

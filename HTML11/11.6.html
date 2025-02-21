@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Rebote</title>
+    <style>
+        #objeto {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            border-radius: 50%;
+        }
+    </style>
+    <script>
+        var direccionX = 1;
+        var direccionY = 1;
+        var velocidad = 5;
+
+        function rebotar() {
+            var objeto = document.getElementById("objeto");
+            var posX = parseInt(objeto.style.left) || 50;
+            var posY = parseInt(objeto.style.top) || 50;
+
+            posX += velocidad * direccionX;
+            posY += velocidad * direccionY;
+
+            if (posX <= 0 || posX >= window.innerWidth - 50) {
+                direccionX *= -1;
+            }
+            if (posY <= 0 || posY >= window.innerHeight - 50) {
+                direccionY *= -1;
+            }
+
+            objeto.style.left = posX + "px";
+            objeto.style.top = posY + "px";
+
+            requestAnimationFrame(rebotar); // Animación continua
+        }
+
+        window.onload = rebotar; // Iniciar la animación al cargar la página
+    </script>
+</head>
+<body>
+    <h1>Animación de Rebote</h1>
+    <div id="objeto"></div>
+</body>
+</html>

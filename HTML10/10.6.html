@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Contraseñas Iguales</title>
+    <script>
+        function validarContraseñas() {
+            var contraseña1 = document.getElementById("contraseña1").value;
+            var contraseña2 = document.getElementById("contraseña2").value;
+
+            if (contraseña1 === contraseña2) {
+                alert("Las contraseñas coinciden.");
+            } else {
+                alert("Las contraseñas no coinciden.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Validar Contraseñas Iguales</h1>
+    <input type="password" id="contraseña1" placeholder="Ingrese su contraseña"><br><br>
+    <input type="password" id="contraseña2" placeholder="Confirme su contraseña"><br><br>
+    <button onclick="validarContraseñas()">Validar</button>
+</body>
+</html>

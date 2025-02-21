@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar formulario</title>
+    <script>
+        function validarFormulario() {
+            var nombre = document.getElementById("nombre").value;
+            var email = document.getElementById("email").value;
+
+            if (nombre === "" || email === "") {
+                alert("Por favor, complete todos los campos.");
+                return false;
+            }
+            alert("Formulario enviado correctamente.");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <form onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

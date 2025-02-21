@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Mayor de Edad</title>
+    <script>
+        function validarEdad() {
+            var edad = parseInt(document.getElementById("edad").value);
+
+            if (isNaN(edad) || edad < 18) {
+                alert("Debes ser mayor de edad.");
+            } else {
+                alert("Eres mayor de edad.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Validar Mayor de Edad</h1>
+    <input type="number" id="edad" placeholder="Ingrese su edad">
+    <button onclick="validarEdad()">Validar</button>
+</body>
+</html>

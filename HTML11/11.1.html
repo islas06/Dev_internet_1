@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Movimiento</title>
+    <style>
+        #objeto {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+    <script>
+        function mover(direccion) {
+            var objeto = document.getElementById("objeto");
+            var posicion = parseInt(objeto.style[direccion]) || 0;
+
+            if (direccion === "left" || direccion === "top") {
+                posicion -= 10;
+            } else {
+                posicion += 10;
+            }
+
+            objeto.style[direccion] = posicion + "px";
+        }
+    </script>
+</head>
+<body>
+    <h1>Animación de Movimiento</h1>
+    <div id="objeto"></div>
+    <br><br>
+    <button onclick="mover('left')">Izquierda</button>
+    <button onclick="mover('right')">Derecha</button>
+    <button onclick="mover('top')">Arriba</button>
+    <button onclick="mover('bottom')">Abajo</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Nodo Hijo</title>
+    <script>
+        function añadirNodo() {
+            // Crear un nuevo nodo de elemento
+            var nuevoNodo = document.createElement("p");
+            nuevoNodo.innerText = "Este es un nuevo nodo hijo.";
+
+            // Seleccionar el elemento padre
+            var elementoPadre = document.getElementById("contenedor");
+
+            // Añadir el nuevo nodo como hijo
+            elementoPadre.appendChild(nuevoNodo);
+        }
+    </script>
+</head>
+<body>
+    <h1>Añadir Nodo Hijo</h1>
+    <div id="contenedor">
+        <p>Este es un nodo existente.</p>
+    </div>
+    <br>
+    <button onclick="añadirNodo()">Añadir Nodo</button>
+</body>
+</html>

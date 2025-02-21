@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Formato de Correo</title>
+    <script>
+        function validarCorreo() {
+            var correo = document.getElementById("correo").value;
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expresión regular para validar correo
+
+            if (regex.test(correo)) {
+                alert("El correo es válido.");
+            } else {
+                alert("El correo no es válido.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Validar Formato de Correo</h1>
+    <input type="text" id="correo" placeholder="Ingrese su correo">
+    <button onclick="validarCorreo()">Validar</button>
+</body>
+</html>

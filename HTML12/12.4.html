@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar Elemento</title>
+    <script>
+        function ocultarElemento() {
+            // Seleccionar el elemento
+            var elemento = document.getElementById("elementoAOcultar");
+
+            // Ocultar el elemento
+            elemento.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <h1>Ocultar Elemento</h1>
+    <p id="elementoAOcultar">Este elemento será ocultado.</p>
+    <br>
+    <button onclick="ocultarElemento()">Ocultar</button>
+</body>
+</html>

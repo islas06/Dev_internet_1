@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Longitud de Contraseña</title>
+    <script>
+        function validarContraseña() {
+            var contraseña = document.getElementById("contraseña").value;
+
+            if (contraseña.length < 8) {
+                alert("La contraseña debe tener al menos 8 caracteres.");
+            } else {
+                alert("La contraseña es válida.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Validar Longitud de Contraseña</h1>
+    <input type="password" id="contraseña" placeholder="Ingrese su contraseña">
+    <button onclick="validarContraseña()">Validar</button>
+</body>
+</html>

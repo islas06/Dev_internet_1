@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Nodo Hijo</title>
+    <script>
+        function eliminarNodo() {
+            // Seleccionar el elemento padre
+            var elementoPadre = document.getElementById("contenedor");
+
+            // Seleccionar el nodo hijo a eliminar
+            var nodoHijo = document.getElementById("nodoAEliminar");
+
+            // Eliminar el nodo hijo
+            elementoPadre.removeChild(nodoHijo);
+        }
+    </script>
+</head>
+<body>
+    <h1>Eliminar Nodo Hijo</h1>
+    <div id="contenedor">
+        <p id="nodoAEliminar">Este nodo será eliminado.</p>
+        <p>Este nodo permanecerá.</p>
+    </div>
+    <br>
+    <button onclick="eliminarNodo()">Eliminar Nodo</button>
+</body>
+</html>

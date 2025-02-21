@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Pares</title>
+    <script>
+        window.onload = function() {
+            // Arreglo original
+            var numeros = [5, 10, 15, 20, 25];
+
+            // Filtrar los números pares
+            var pares = numeros.filter(function(numero) {
+                return numero % 2 === 0;
+            });
+
+            // Mostrar el arreglo de números pares en el navegador
+            document.getElementById("resultado").innerText = pares.join(", ");
+        };
+    </script>
+</head>
+<body>
+    <h1>Números Pares</h1>
+    <p id="resultado"></p>
+</body>
+</html>

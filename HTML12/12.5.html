@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Elemento</title>
+    <script>
+        function mostrarElemento() {
+            // Seleccionar el elemento
+            var elemento = document.getElementById("elementoAMostrar");
+
+            // Mostrar el elemento
+            elemento.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <h1>Mostrar Elemento</h1>
+    <p id="elementoAMostrar" style="display: none;">Este elemento será mostrado.</p>
+    <br>
+    <button onclick="mostrarElemento()">Mostrar</button>
+</body>
+</html>
